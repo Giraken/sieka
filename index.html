@@ -20,32 +20,35 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#">
-                    <img class="logo-icon" src="assets/img/logo.png" alt="">
+                    <img class="logo-icon" src="assets/img/logo-lt.png" alt="">
                 </a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Home</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#products" class="nav__link">Products</a>
+                        <li class="nav-item">
+                            <a href="#products" class="nav-link">Products</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
 
-                    <div class="nav__close" id="nav-close">
+                    <div class="nav-close" id="nav-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
 
-                <div class="nav__btns">
-                    <div class="nav__toggle" id="nav-toggle">
+                <div class="nav-btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav-toggle" id="nav-toggle">
                         <i class="ri-menu-line"></i>
                     </div>
                 </div>
@@ -55,20 +58,20 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <div class="home__container container grid">
-                    <img src="assets/img/2.png" alt="" class="home__img">
+                <div class="home-container container grid">
+                    <img src="assets/img/2.png" alt="" class="home-img">
 
-                    <div class="home__data">
-                        <h1 class="home__title">
-                            <span>Welcome To</span>
+                    <div class="home-data">
+                        <h1 class="home-title">
+                            <span>Welcome to</span>
                             Sieka Official Website
                         </h1>
-                        <p class="home__description">
+                        <p class="home-description">
                             Introducing the New Era of Detergents: <br>
                             A Combination of Enzyme Technology and Biodegradable Components!
                         </p>
                         <a href="#about-product" class="button button--flex">
-                            More <i class="ri-arrow-right-down-line button__icon"></i>
+                            More <i class="ri-arrow-right-down-line button-icon"></i>
                         </a>
                     </div>
                 </div>
@@ -76,142 +79,142 @@
 
 
             <!--==================== ABOUT ====================-->
-            <section class="about-product" id="about-product">
-                <div class="hero1 d-flex flex-column">
-                    <iframe
-                        src="https://www.youtube.com/embed/9zeAZ7Opgss?start=27" title="YouTube video player" 
-                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </section>
-
-            <section class="team-container">
-                <div class="team-container">
-                    <h2 class="team-heading">Our Team</h2>
-                    <div class="ceo">
-                        <div class="profile-pic">
-                            <img src="assets/img/grace.png" alt="" />
-                        </div>
-              
-                        <div class="team-member-name">Grace Triana Kristianty</div>
-                        <div class="meta">President Director</div>
-                        <div class="meta">Pacarnya Gifari</div>
+            <section id="about">
+                <section class="about-product">
+                    <div class="hero1 d-flex flex-column">
+                        <iframe
+                            src="https://www.youtube.com/embed/9zeAZ7Opgss?start=27" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
-              
-                    <div class="core-team-container">
-                        <div class="team-member">
+                </section>
+    
+                <section>
+                    <div class="team-container">
+                        <h2 class="team-heading">Our Team</h2>
+                        <div class="ceo">
                             <div class="profile-pic">
-                                <img src="assets/img/devi.png" alt="" />
+                                <img src="assets/img/grace.png" alt="" />
                             </div>
-                
-                            <div class="team-member-name">Devi Mariya Sulfa</div>
-                            <div class="meta">Production manager</div>
+                  
+                            <div class="team-member-name">Grace Triana Kristianty</div>
+                            <div class="meta">President Director</div>
+                            <div class="meta">Pacarnya Gifari</div>
                         </div>
-              
-                        <div class="team-member">
-                            <div class="profile-pic">
-                            <img src="assets/img/kuntum.png" alt="" />
+                  
+                        <div class="core-team-container">
+                            <div class="team-member">
+                                <div class="profile-pic">
+                                    <img src="assets/img/devi.png" alt="" />
+                                </div>
+                    
+                                <div class="team-member-name">Devi Mariya Sulfa</div>
+                                <div class="meta">Production manager</div>
                             </div>
-                
-                            <div class="team-member-name">Kuntum Kinanthi Putri </div>
-                            <div class="meta">Marketing Manager</div>
-                        </div>
-              
-                        <div class="team-member">
-                            <div class="profile-pic">
-                            <img src="assets/img/meisya.png" alt="" />
+                  
+                            <div class="team-member">
+                                <div class="profile-pic">
+                                <img src="assets/img/kuntum.png" alt="" />
+                                </div>
+                    
+                                <div class="team-member-name">Kuntum Kinanthi Putri </div>
+                                <div class="meta">Marketing Manager</div>
                             </div>
-                
-                            <div class="team-member-name">Lucky Meisya Wadreina</div>
-                            <div class="meta">Finance Manager</div>
-                        </div>
-
-                        <div class="team-member">
-                            <div class="profile-pic">
-                            <img src="assets/img/salsa.png" alt="" />
+                  
+                            <div class="team-member">
+                                <div class="profile-pic">
+                                <img src="assets/img/meisya.png" alt="" />
+                                </div>
+                    
+                                <div class="team-member-name">Lucky Meisya Wadreina</div>
+                                <div class="meta">Finance Manager</div>
                             </div>
-                
-                            <div class="team-member-name">Andiani Salsa Sabrina </div>
-                            <div class="meta">Brand Manager</div>
+    
+                            <div class="team-member">
+                                <div class="profile-pic">
+                                <img src="assets/img/salsa.png" alt="" />
+                                </div>
+                    
+                                <div class="team-member-name">Andiani Salsa Sabrina </div>
+                                <div class="meta">Brand Manager</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section class="about section container" id="about">
-                <div class="about__container grid">
-                    <img src="assets/img/about.png" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <h2 class="section__title about__title">
-                            Our mission
-                        </h2>
-
-                        <p class="about__description">
-                            Menjadi perusahaan terkemuka dalam menghasilkan produk detergen yang ramah lingkungan, 
-                            dan senantiasa selalu menjunjung tinggi konsep ramah lingkungan, berkelanjutan dan memenuhi 
-                            harapan konsumen dan produsen.
-                        </p>
-
-                        <div class="about__details">
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Menghasilkan produk yang berkualitas dan ramah lingkungan
+                </section>
+    
+                <section class="about section container">
+                    <div class="about-container grid">
+                        <img src="assets/img/about.png" alt="" class="about-img">
+    
+                        <div class="about-data">
+                            <h2 class="section-title about-title">
+                                Our mission
+                            </h2>
+    
+                            <p class="about-description">
+                                Menghasilkan produk ramah lingkungan yang senantiasa menjunjung tinggi konsep berkelanjutan.
                             </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Mengoptimalkan kepuasan konsumen dengan memberikan produk dengan kualitas terbaik dan harga yang bersaing.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Menjadi perusahaan yang memenuhi tanggung jawab sosial korporasi, baik secara eksternal mau pun internal, secara berkelanjutan.
-                            </p>
+    
+                            <div class="about-details">
+                                <p class="about-details-description">
+                                    <i class="ri-checkbox-fill about-details-icon"></i>
+                                    Menghasilkan produk yang berkualitas dan ramah lingkungan.
+                                </p>
+                                <p class="about-details-description">
+                                    <i class="ri-checkbox-fill about-details-icon"></i>
+                                    Mengoptimalkan kepuasan konsumen dengan memberikan produk dengan berkualitas dengan  harga terjangkau.
+                                </p>
+                                <p class="about-details-description">
+                                    <i class="ri-checkbox-fill about-details-icon"></i>
+                                    Menjadi perusahaan  yang memenuhi tanggung jawab sosial korporasi, baik secara eksternal maupun internal.
+                                </p>
+                            </div>
+    
+                            <a href="#products" class="button--link button--flex">
+                                Shop Now <i class="ri-arrow-right-down-line button-icon"></i>
+                            </a>
                         </div>
-
-                        <a href="#products" class="button--link button--flex">
-                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
-                        </a>
                     </div>
-                </div>
+                </section>
             </section>
 
             <!--==================== PRODUCTS ====================-->
             <section class="product section container" id="products">
-                <h2 class="section__title-center">
+                <h2 class="section-title-center">
                     Check out our <br> products
                 </h2>
 
-                <p class="product__description">
+                <p class="product-description">
                     Deskripsi Produk
                 </p>
 
-                <div class="product__container grid">
-                    <article class="product__card">
-                        <div class="product__circle"></div>
+                <div class="product-container grid">
+                    <article class="product-card">
+                        <div class="product-circle"></div>
 
-                        <img src="assets/img/product1.png" alt="" class="product__img">
+                        <img src="assets/img/product1.png" alt="" class="product-img">
 
-                        <h3 class="product__title">Detergen Balls</h3>
-                        <span class="product__price">Rp. 48.000</span>
+                        <h3 class="product-title">Detergen Balls</h3>
+                        <span class="product-price">Rp. 48.000</span>
 
                         <a href="product-balls.html">
-                            <button class="button--flex product__button">
+                            <button class="button--flex product-button">
                                 <i class="ri-shopping-bag-line"></i>
                             </button>
                         </a>
                     </article>
 
-                    <article class="product__card">
-                        <div class="product__circle"></div>
+                    <article class="product-card">
+                        <div class="product-circle"></div>
 
-                        <img src="assets/img/product2.png" alt="" class="product__img">
+                        <img src="assets/img/product2.png" alt="" class="product-img">
 
-                        <h3 class="product__title">Detergen Cair</h3>
-                        <span class="product__price">Rp. 28.000</span>
+                        <h3 class="product-title">Detergen Cair</h3>
+                        <span class="product-price">Rp. 28.000</span>
 
                         <a href="product-cair.html">
-                            <button class="button--flex product__button">
+                            <button class="button--flex product-button">
                                 <i class="ri-shopping-bag-line"></i>
                             </button>
                         </a>
@@ -224,69 +227,102 @@
             <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
                 <span>Mari Berkontribusi Menjaga Lingkungan</span>
                 <h3>Kumpulkan 5 botol bekas</h3>
-                <p>Tukarkan dengan produk baru Sieka dengan mengumpulkan 5 botol bekas Sieka detergen cair</p>
+                <p>
+                    Dapatkan diskon sebesar 50% untuk pembelian produk selanjutnya
+                    <br> atau <br> 
+                    Bergabung untuk menjaga lingkungan dengan berdonasi kepada komunitas pecinta alam melalui Sieka
+                </p>
                 <a href="#book-form" class="btn">Tukarkan Sekarang</a>
             </div>
         
         </div>
 
+        <section class="contact section container" id="contact">
+            <div class="contact-detail">
+                <h2 class="section-title-center contact-title">
+                    Come to our office :
+                </h2>
+
+                <div class="contact-card">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9750953930563!2d112.64314198535615!3d-7.936617803484913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6297162c1d621%3A0xaa8e36fe9a22bfef!2sRonde%20Piranha!5e0!3m2!1sid!2sid!4v1628607907179!5m2!1sid!2sid"
+                            allowfullscreen loading="lazy">
+                    </iframe>
+                    <h3>Kota Malang, Jawa Timur</h3>
+                    <p>
+                        Jalan Ikan Piranha Blok I-15, Blimbing
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!--==================== FOOTER ====================-->
         <footer class="footer section">
-            <div class="footer__container container grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">
-                        <i class="ri-leaf-line footer__logo-icon"></i> Sieka
-                    </a>
+            <div class="footer-container container grid">
+                <div class="footer-website">
+                    <h3 class="footer-title">About Developer</h3>
+                    <p>
+                        Developed by Gifari Asmara
+                        <br> Contact me at:
+                    </p>
+                    <div class="footer-social">
+                        
+                        <a href="https://www.linkedin.com/in/gifari-asmara-093843158/" class="footer-social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://wa.me/qr/6JRV2BGMGSUZI1" class="footer-social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gira_dl/" class="footer-social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://youtu.be/9zeAZ7Opgss." class="footer-social-link">
+                            <i class="ri-mail-add-line"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Our Address</h3>
-
-                    <!-- <ul class="footer__data">
-                        <li class="footer__information">1234 - Peru</li>
-                        <li class="footer__information">La Libertad - 43210</li>
-                        <li class="footer__information">123-456-789</li>
-                    </ul> -->
+                <div class="footer-content">
+                    <h3 class="footer-title">Website Reference</h3>
+                    <div class="footer-social">
+                            <p>
+                                <a href="https://youtu.be/lpzExNZDizI" class="footer-social-link"> 
+                                    <i class="ri-youtube-line"></i> Bedimcode
+                                </a> <br>
+                                <a href="https://youtu.be/1BHKhGuEItc" class="footer-social-link">
+                                    <i class="ri-youtube-line"></i> GeekProbin
+                                </a>
+                            </p>
+                    </div>
                 </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Contact Us</h3>
+                <div class="footer-content">
+                    <h3 class="footer-title">Sieka Official Social Media</h3>
 
-                    <ul class="footer__data">
-                        <div class="footer__social">
-                            <a href="" class="footer__social-link">
+                    <ul class="footer-data">
+                        <div class="footer-social">
+                            <a href="https://wa.me/qr/EMARW3LJIN2FO1 " class="footer-social-link">
                                 <i class="ri-whatsapp-line"></i>
                             </a>
-                            <a href="https://instagram.com/siekadetergen?igshid=YmMyMTA2M2Y= " class="footer__social-link">
+                            <a href="https://www.tiktok.com/@siekadetergen?_t=8UlBEuVLh0D&_r=1 " class="footer-social-link">
+                                <img src="assets/img/tiktok-dk.png" alt="logo-tiktok">
+                            </a>
+                            <a href="https://instagram.com/siekadetergen?igshid=YmMyMTA2M2Y= " class="footer-social-link">
                                 <i class="ri-instagram-line"></i>
                             </a>
-                            <a href="https://youtu.be/9zeAZ7Opgss." class="footer__social-link">
+                            <a href="https://youtu.be/9zeAZ7Opgss." class="footer-social-link">
                                 <i class="ri-youtube-line"></i>
                             </a>
                         </div>
                     </ul>
                 </div>
-
-                <!-- <div class="footer__content">
-                    <h3 class="footer__title">
-                        We accept all credit cards
-                    </h3>
-
-                    <div class="footer__cards">
-                        <img src="assets/img/card1.png" alt="" class="footer__card">
-                        <img src="assets/img/card2.png" alt="" class="footer__card">
-                        <img src="assets/img/card3.png" alt="" class="footer__card">
-                        <img src="assets/img/card4.png" alt="" class="footer__card">
-                    </div>
-                </div> -->
             </div>
 
-            <p class="footer__copy">&#169; Sieka. All rigths reserved</p>
+            <p class="footer-copy">&#169; Sieka. All rigths reserved</p>
         </footer>
         
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
-            <i class="ri-arrow-up-fill scrollup__icon"></i>
+            <i class="ri-arrow-up-fill scrollup-icon"></i>
         </a>
 
         <!--=============== SCROLL REVEAL ===============-->

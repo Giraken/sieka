@@ -69,6 +69,9 @@ window.addEventListener('scroll', scrollUp)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
+const logoIcon = document.getElementById('logo-icon')
+const lt = 'assets/img/logo-lt.png'
+const dt = 'assets/img/logo-dk.png'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -90,6 +93,16 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
+    
+    // Change nav icon based on theme
+    if (getCurrentTheme() === 'dark') {
+        logoIcon.src = dt;
+    }
+
+    else if (getCurrentTheme() === 'light') {
+        logoIcon.src = lt;
+    }
+      
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())

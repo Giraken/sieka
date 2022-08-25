@@ -72,6 +72,9 @@ const iconTheme = 'ri-sun-line'
 const logoIcon = document.getElementById('logo-icon')
 const lt = 'assets/img/logo-lt.png'
 const dt = 'assets/img/logo-dk.png'
+const logofooter = document.getElementById('logo-footer')
+const tiktoklt = 'assets/img/tiktok-lt.png'
+const tiktokdt = 'assets/img/tiktok-dk.png'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -93,16 +96,24 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    
+
     // Change nav icon based on theme
     if (getCurrentTheme() === 'dark') {
         logoIcon.src = dt;
     }
-
+    
     else if (getCurrentTheme() === 'light') {
         logoIcon.src = lt;
     }
-      
+    
+    // Change footer logo image
+    if (getCurrentTheme() === 'dark') {
+        logofooter.src = tiktokdt;
+    }
+    
+    else if (getCurrentTheme() === 'light') {
+        logofooter.src = tiktoklt;
+    }
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())

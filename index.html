@@ -95,7 +95,7 @@
                         <h2 class="team-heading">Our Team</h2>
                         <div class="ceo">
                             <div class="profile-pic">
-                                <img src="assets/img/grace.png" alt="" />
+                                <img src="assets/img/grace.png" alt="" onclick="document.getElementById('modal-grace').style.display='block'" />
                             </div>
                   
                             <div class="team-member-name">Grace Triana Kristianty</div>
@@ -106,7 +106,7 @@
                         <div class="core-team-container">
                             <div class="team-member">
                                 <div class="profile-pic">
-                                    <img src="assets/img/devi.png" alt="" />
+                                    <img src="assets/img/devi.png" alt="" onclick="document.getElementById('modal-devi').style.display='block'" />
                                 </div>
                     
                                 <div class="team-member-name">Devi Mariya Sulfa</div>
@@ -115,7 +115,7 @@
                   
                             <div class="team-member">
                                 <div class="profile-pic">
-                                <img src="assets/img/kuntum.png" alt="" />
+                                <img src="assets/img/kuntum.png" alt="" onclick="document.getElementById('modal-kuntum').style.display='block'" />
                                 </div>
                     
                                 <div class="team-member-name">Kuntum Kinanthi Putri </div>
@@ -124,7 +124,7 @@
                   
                             <div class="team-member">
                                 <div class="profile-pic">
-                                <img src="assets/img/meisya.png" alt="" />
+                                <img src="assets/img/meisya.png" alt="" onclick="document.getElementById('modal-meisya').style.display='block'" />
                                 </div>
                     
                                 <div class="team-member-name">Lucky Meisya Wadreina</div>
@@ -133,7 +133,7 @@
     
                             <div class="team-member">
                                 <div class="profile-pic">
-                                <img src="assets/img/salsa.png" alt="" />
+                                <img src="assets/img/salsa.png" alt="" onclick="document.getElementById('modal-salsa').style.display='block'" />
                                 </div>
                     
                                 <div class="team-member-name">Andiani Salsa Sabrina </div>
@@ -142,7 +142,82 @@
                         </div>
                     </div>
                 </section>
-    
+                
+                <div class="modal" id="modal-grace">
+                    <div class="modal-content">
+                        <span onclick="document.getElementById('modal-grace').style.display='none'" class="close">&times;</span>
+                        
+                        <div class="content-image">
+                            <img src="assets/img/grace.png" alt="">
+                        </div>
+                        <div class="content-detail"> 
+                            <div class="modal-name">Grace Triana Kristianty</div>
+                            <div class="meta">President Director</div>
+                            <div class="modal-detail">Bertanggung jawab untuk menjalankan dan mengkoordinasikan perusahaan sehingga mampu merealisasikan visi dan misi perusahaan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-devi">
+                    <div class="modal-content">
+                        <span onclick="document.getElementById('modal-devi').style.display='none'" class="close">&times;</span>
+                        
+                        <div class="content-image">
+                            <img src="assets/img/devi.png" alt="">
+                        </div>
+                        <div class="content-detail"> 
+                            <div class="modal-name">Devi Mariya Sulfa</div>
+                            <div class="meta">Production Manager</div>
+                            <div class="modal-detail">Bertanggung jawab untuk merealisasikan inovasi produk yang dilaksanakan oleh mahasiswa Biologi yang mumpuni di bidangnya</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal" id="modal-kuntum">
+                    <div class="modal-content">
+                        <span onclick="document.getElementById('modal-kuntum').style.display='none'" class="close">&times;</span>
+                        
+                        <div class="content-image">
+                            <img src="assets/img/kuntum.png" alt="">
+                        </div>
+                        <div class="content-detail"> 
+                            <div class="modal-name">Kuntum Kinanthi Putri</div>
+                            <div class="meta">Marketing Manager</div>
+                            <div class="modal-detail">Bertanggung jawab untuk menentukan model bisnis dan pemasaran yang strategis guna meningkatkan penjualan produk</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-meisya">
+                    <div class="modal-content">
+                        <span onclick="document.getElementById('modal-meisya').style.display='none'" class="close">&times;</span>
+                        
+                        <div class="content-image">
+                            <img src="assets/img/meisya.png" alt="">
+                        </div>
+                        <div class="content-detail">
+                            <div class="modal-name">Lucky Meisya Wadreina</div>
+                            <div class="meta">Finance Manager</div>
+                            <div class="modal-detail">Bertanggung jawab untuk merencanakan dan menjalankan keuangan perusahaan sehingga mampu mengembangkan perusahaan </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal-salsa">
+                    <div class="modal-content">
+                        <span onclick="document.getElementById('modal-salsa').style.display='none'" class="close">&times;</span>
+                        
+                        <div class="content-image">
+                            <img src="assets/img/salsa.png" alt="">
+                        </div>
+                        <div class="content-detail">
+                            <div class="modal-name">Andiani Salsa Sabrina </div>
+                            <div class="meta">Brand Manager</div>
+                            <div class="modal-detail">Bertanggung jawab untuk melakukan branding perusahaan guna meningkatkan brand awareness</div>
+                        </div>
+                    </div>
+                </div>
+
                 <section class="about section container">
                     <div class="about-container grid">
                         <img src="assets/img/about.png" alt="" class="about-img">
@@ -232,7 +307,7 @@
                     <br> atau <br> 
                     Bergabung untuk menjaga lingkungan dengan berdonasi kepada komunitas pecinta alam melalui Sieka
                 </p>
-                <a href="#book-form" class="btn">Tukarkan Sekarang</a>
+                <a href="https://forms.gle/HaiSCEdAt4UUWj7v7" class="btn" target="_blank">Tukarkan Sekarang</a>
             </div>
         
         </div>
@@ -266,16 +341,16 @@
                     </p>
                     <div class="footer-social">
                         
-                        <a href="https://www.linkedin.com/in/gifari-asmara-093843158/" class="footer-social-link">
+                        <a href="https://www.linkedin.com/in/gifari-asmara-093843158/" class="footer-social-link" target="_blank">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
-                        <a href="https://wa.me/qr/6JRV2BGMGSUZI1" class="footer-social-link">
+                        <a href="https://wa.me/qr/6JRV2BGMGSUZI1" class="footer-social-link" target="_blank">
                             <i class="ri-whatsapp-line"></i>
                         </a>
-                        <a href="https://www.instagram.com/gira_dl/" class="footer-social-link">
+                        <a href="https://www.instagram.com/gira_dl/" class="footer-social-link" target="_blank">
                             <i class="ri-instagram-line"></i>
                         </a>
-                        <a href="https://github.com/Giraken/sieka" class="footer-social-link">
+                        <a href="https://github.com/Giraken/sieka" class="footer-social-link" target="_blank">
                             <i class="ri-github-line"></i>
                         </a>
                     </div>
@@ -285,10 +360,10 @@
                     <h3 class="footer-title">Website Reference</h3>
                     <div class="footer-social">
                             <p>
-                                <a href="https://youtu.be/lpzExNZDizI" class="footer-social-link"> 
+                                <a href="https://youtu.be/lpzExNZDizI" class="footer-social-link" target="_blank"> 
                                     <i class="ri-youtube-line"></i> Bedimcode
                                 </a> <br>
-                                <a href="https://youtu.be/1BHKhGuEItc" class="footer-social-link">
+                                <a href="https://youtu.be/1BHKhGuEItc" class="footer-social-link" target="_blank">
                                     <i class="ri-youtube-line"></i> GeekProbin
                                 </a>
                             </p>
@@ -300,16 +375,16 @@
 
                     <ul class="footer-data">
                         <div class="footer-social">
-                            <a href="https://wa.me/qr/EMARW3LJIN2FO1 " class="footer-social-link">
+                            <a href="https://wa.me/qr/EMARW3LJIN2FO1 " class="footer-social-link" target="_blank">
                                 <i class="ri-whatsapp-line"></i>
                             </a>
-                            <a href="https://www.tiktok.com/@siekadetergen?_t=8UlBEuVLh0D&_r=1 " class="footer-social-link">
+                            <a href="https://www.tiktok.com/@siekadetergen?_t=8UlBEuVLh0D&_r=1 " class="footer-social-link" target="_blank">
                                 <img src="assets/img/tiktok-lt.png" alt="logo-tiktok" id="logo-footer">
                             </a>
-                            <a href="https://instagram.com/siekadetergen?igshid=YmMyMTA2M2Y= " class="footer-social-link">
+                            <a href="https://instagram.com/siekadetergen?igshid=YmMyMTA2M2Y= " class="footer-social-link" target="_blank">
                                 <i class="ri-instagram-line"></i>
                             </a>
-                            <a href="https://youtu.be/9zeAZ7Opgss." class="footer-social-link">
+                            <a href="https://youtu.be/9zeAZ7Opgss." class="footer-social-link" target="_blank">
                                 <i class="ri-youtube-line"></i>
                             </a>
                         </div>

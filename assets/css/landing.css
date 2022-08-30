@@ -380,6 +380,11 @@ the website, in dark theme
   box-shadow: 0 8px 29px -17px rgba(0, 0, 0, 0.4);
 }
 
+.profile-pic:hover img{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
 .team-member {
   display: flex;
   flex-direction: column;
@@ -411,6 +416,91 @@ the website, in dark theme
   padding: 24px;
   text-transform: uppercase;
   font-weight: normal;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /*Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+.modal-content {
+  background-color: var(--body-color);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  text-align:center;
+}
+
+.content-image img{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 8px 29px -17px rgba(0, 0, 0, 0.4);
+  margin-top: 75px;
+  margin-left: 25px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+}
+
+.modal-name {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 12px 0;
+}
+
+.modal-detail {
+  font-size: 16px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .close {
+      /* right: 0rem;
+      top: -5rem; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .close {
+      /* right: 10px;
+      top: 15px; */
+  }
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ABOUT */

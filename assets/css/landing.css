@@ -211,16 +211,6 @@ the website, in dark theme
   cursor: pointer;
 }
 
-.nav-btns{
-  display: inline-flex;
-  align-items: center;
-  column-gap: 1rem;
-}
-
-.nav-list{
-  margin: 10px;
-}
-
 .nav-close{
   font-size: 1.5rem;
   position: absolute;
@@ -233,6 +223,7 @@ the website, in dark theme
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  margin: 10px;
 }
 
 .nav-link{
@@ -468,6 +459,11 @@ the website, in dark theme
 .modal-name {
   font-weight: bold;
   font-size: 22px;
+  margin: 12px 0;
+}
+
+.modal-meta{
+  font-size: 20px;
   margin: 12px 0;
 }
 
@@ -928,6 +924,10 @@ border-radius: 10px;
     border-radius: 1rem 0 0 1rem;
     transition: .3s;
     z-index: var(--z-fixed);
+  }
+
+  .nav-menu.show-menu{ 
+    right: 0; 
   }
 }
 

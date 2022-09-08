@@ -1,7 +1,7 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav_menu'),
+      navToggle = document.getElementById('nav_toggle'),
+      navClose = document.getElementById('nav_close')
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -23,7 +23,7 @@ if(navClose){
 const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav_menu')
     // When we click on each nav-link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }

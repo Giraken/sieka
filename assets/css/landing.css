@@ -125,7 +125,7 @@ body.dark-theme{
 .nav-btns{
   display: inline-flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 0.3rem;
 }
 
 /*========== 
@@ -138,6 +138,10 @@ the website, in dark theme
 }
 
 .dark-theme .profile-pic img{
+  background-color: var(--container-color);
+}
+
+.dark-theme .content-image img {
   background-color: var(--container-color);
 }
 
@@ -209,6 +213,7 @@ the website, in dark theme
   display: inline-flex;
   font-size: 1.25rem;
   cursor: pointer;
+  margin: 15px;
 }
 
 .nav-close{
@@ -511,6 +516,7 @@ the website, in dark theme
 
 .about-title{
   margin-bottom: var(--mb-1);
+  margin-top: 75px;
 }
 
 .about-description{
@@ -573,7 +579,7 @@ the website, in dark theme
 
 .product-button{
   position: absolute;
-  right: 0;
+  right: -50px;
   bottom: 0;
   background-color: var(--first-color);
   color: #FFF;
@@ -813,6 +819,17 @@ border-radius: 10px;
   .contact-card iframe{
     height: 200px;
   }
+
+  .product-button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .25rem;
+    border-radius: .35rem;
+    font-size: 1.15rem;
+  }
 }
 
 /* For medium devices */
@@ -848,7 +865,18 @@ border-radius: 10px;
 
   .contact-card iframe{
     height: 400px;
-    }
+  }
+
+  .product-button{
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: .25rem;
+    border-radius: .35rem;
+    font-size: 1.15rem;
+  }
 }
 
 @media screen and (max-height: 850px){
@@ -973,7 +1001,7 @@ border-radius: 10px;
     padding: 4rem 0;
     padding-right: 5rem;
     grid-template-columns: repeat(2, 200px);
-    gap: 2rem 8rem;
+    gap: 2rem 9rem;
   }
   .product-img{
     width: 300px;

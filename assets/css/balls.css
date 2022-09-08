@@ -125,7 +125,7 @@ body.dark-theme{
 .nav-btns{
   display: inline-flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: 0.3rem;
 }
 
 .dark-theme .scroll-header{
@@ -184,12 +184,7 @@ body.dark-theme{
   display: inline-flex;
   font-size: 1.25rem;
   cursor: pointer;
-}
-
-.nav-btns{
-  display: inline-flex;
-  align-items: center;
-  column-gap: 1rem;
+  margin: 15px;
 }
 
 .nav-list{
@@ -458,14 +453,17 @@ img{
       height: calc(var(--header-height) + 1.5rem);
       column-gap: 3rem;
     }
+
     .nav-toggle,
     .nav-close{
       display: none;
     }
+
     .nav-list{
       flex-direction: row;
       column-gap: 3rem;
     }
+
     .nav-menu{
       margin-left: auto;
     }
@@ -485,6 +483,10 @@ img{
     border-radius: 1rem 0 0 1rem;
     transition: .3s;
     z-index: var(--z-fixed);
+  }
+
+  .nav-menu.show-menu{ 
+    right: 0; 
   }
 
 }
